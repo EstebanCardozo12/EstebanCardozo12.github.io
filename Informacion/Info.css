@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+
+/*Seccion 1*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/media/fondo-header\ 3.jpg);
+    background-size: 100vw 40vh;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    padding: 30px;
+}
+
+header .nombre-cafeteria {
+    font-size: 54px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace, 'Bebas Neue', cursive !important;
+    font-weight: 100;
+}
+
+.logo img {
+    height: 8em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    margin-right: 170px;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.recuadro {
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+.recuadro p {
+    margin: 10px;
+}
+
+.nombre-f {
+    display: flex;
+    flex-direction: space-between;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 27px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background: #31384a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+    font-weight: bold;
+}
+
+i {
+    font-size: 30px;
+}
+
+a {
+    color: black;
+}
+
+/*responsive movil*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-image: url(/media/fondo-header\ 3.jpg)no-repeat;
+        background-size: cover;
+        padding: 30px;
+    }
+
+    header .nombre-cafeteria {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.80em;
+        color: whitesmoke;
+        position: absolute;
+        left: 110px;
+        top: 25px;
+    }
+
+    a .logo-cat {
+        position: relative;
+        font-size: 0.50em;
+        bottom: 10px;
+    }
+
+    .nnav {
+        position: relative;
+        top: 50px;
+        right: 250px;
+        width: 1px;
+    }
+
+    form {
+        width: 94%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+}
+
+/*responsive tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-image: url(/media/fondo-header\ 3.jpg)no-repeat;
+        background-size: cover;
+        padding: 35px;
+    }
+
+    header .nombre-cafeteria {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2.20em;
+        position: absolute;
+        color: whitesmoke;
+        left: 150px;
+        top: 35px;
+    }
+
+    a .logo-cat {
+        position: relative;
+        font-size: 0.70em;
+        bottom: 15px;
+        left: 10px;
+    }
+
+    .nnav {
+        position: absolute;
+        top: 119px;
+        left: 53px;
+        width: 1px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    form {
+        width: 88%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+}
+
+/*responsive portatiles*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header {
+        background-image: url(/media/fondo-header\ 3.jpg)no-repeat;
+        background-size: cover;
+        padding: 50px;
+    }
+
+    header .nombre-cafeteria {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2.80em;
+        position: absolute;
+        left: 250px;
+        top: 65px;
+    }
+
+    a .logo-cat {
+        position: relative;
+        font-size: 1em;
+        bottom: 10px;
+        right: 5px;
+    }
+
+    .nnav {
+        position: relative;
+        right: 190px;
+        width: 1px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .recuadro {
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 0px 5px 0px 5px
+    }
+
+    .recuadro p {
+        margin: 10px 0px 10px 50px;
+    }
+
+    form {
+        width: 83%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+}
+
+/*responsive pc*/
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-image: url(/media/fondo-header\ 3.jpg)no-repeat;
+        background-size: cover;
+        padding: 80px;
+    }
+
+    header .nombre-cafeteria {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3em;
+        position: absolute;
+        left: 250px;
+        top: 100px;
+    }
+
+    a .logo-cat {
+        position: relative;
+        font-size: 1em;
+        bottom: 10px;
+        right: 5px;
+    }
+
+    .nnav {
+        position: relative;
+        right: 210px;
+        width: 1px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+
+    .recuadro {
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .recuadro p {
+        margin: 10px 0px 10px 100px;
+    }
+
+    form {
+        width: 78%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+}
+
+/*responsive tv*/
+
+@media screen and (min-width: 1201px) and (max-width: 3000px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-image: url(/media/fondo-header\ 3.jpg)no-repeat;
+        background-size: cover;
+        padding: 140px;
+    }
+
+    header .nombre-cafeteria {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5.3em;
+        position: absolute;
+        left: 390px;
+        top: 160px;
+    }
+
+    a .logo-cat {
+        position: relative;
+        font-size: 1.6em;
+        bottom: 10px;
+        right: 60px;
+    }
+
+    .nnav {
+        position: relative;
+        right: 150px;
+        width: 1px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+
+    .recuadro {
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .recuadro p {
+        margin: 10px 0px 10px 100px;
+    }
+
+    form {
+        width: 73%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+}

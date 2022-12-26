@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--SECCION 1-->
+    <header>
+        <a href="#" class="logo">
+            <img class="cat-logo" src="/media/Logo (1).png" alt="logo">
+        </a>
+        <h2 class="nombre-cafeteria">Coffee <br> Shop</h2>
+        <div class="nnav">
+            <nav>
+                <ul class="menu-horizontal">
+                    <li></li><a href="/Informacion/Info.html">Informacion</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ccarito" data-bs-toggle="modal" data-bs-target="#modal">
+                            <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                        </a>
+                    </li>
+            </nav>
+        </div>
+    </header>
+    <!--SECCION 2-->
+    <main>
+        <div class="row mt-1 center" id="contenedor"></div>
+    </main>
+
+    <div class="container-xl">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Carrito</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                            Vaciar carrito
+                        </button>
+                        <button type="button" id="procesarCompra" class="btn btn-primary">
+                            Continuar compra
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+
+                        <span>Precio total:</span>
+                        <p class="text-center" id="precioTotal"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION 3-->
+    <hr>
+    <h3 class="etiquetas">Estamos Ubicados en</h3>
+    <hr>
+
+    <div class="footer-center-maps">
+        <div id="map" class="map-1"></div>
+    </div>
+
+    <!--SECCION 4-->
+    <footer>
+        <p>&copy;Derechos Reservados: Coffee Shop</p>
+        <a href="#"><i class="fa-brands fa-square-twitter a"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram a"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook a"></i></a>
+    </footer>
+
+    <!--Scripts-->
+    <script src="app.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+
+</html>
